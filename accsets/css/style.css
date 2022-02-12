@@ -28,6 +28,7 @@ html {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 
 }
 #header .search-btn {
@@ -99,9 +100,28 @@ html {
     background-color: #ccc;
 }
 #slider {
+    position: relative;
 margin-top: 46.5px;
 padding-top: 50%;
 background: url('../img/slider/slider.jpg') top center /cover no-repeat;
+}
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+
+}
+#slider .text-heading {
+    font-weight: 500px;
+    font-size: 24px;
+    
+}
+#slider .text-dec {
+    font-size: 15px;
+    margin-top: 25px;
+    
 }
 #content {
 

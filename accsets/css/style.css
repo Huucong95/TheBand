@@ -1,0 +1,106 @@
+/* reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* 1 tu ngoai vao trong
+2 tu tren xuong duoi
+3 tu tong quan den chi tiec 
+*/
+
+/* 
+1 vitri
+2kich thuot
+3 mau sac
+4 kieu dang
+ */
+#main {
+
+}
+#header {
+    height: 46.5px;
+    background-color: black;
+
+}
+#header .search-btn {
+    float: right;
+    cursor: pointer;
+
+}
+#header .search-icon {
+     color: #fff; 
+    font-size: 20px;
+    line-height: 46.5px;
+    padding: 0 21px;
+}
+#header .search-btn:hover {
+   background-color:  #f44336 ;
+}
+#nav {
+    display: inline-block;
+}
+#nav , .subnav {
+    list-style: none;
+
+}
+#nav .nav-icon {
+    font-size: 12px;
+}
+#nav > li {
+    display: inline-block;
+}
+#nav li {
+    position: relative;
+    
+}
+#nav li:hover .subnav {
+    display: block;
+}
+#nav >li >a {
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav li a {
+    
+    text-decoration: none;
+    line-height: 46.5px;
+    padding: 0 24px;
+    display: block;
+}
+#nav > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+
+}
+#nav .subnav {
+    display: none; 
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    position: absolute;
+    background-color: #fff;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.3);
+}
+#nav .subnav a{
+ color: #000;
+ padding: 0 12px;
+ line-height: 40px;
+}
+#nav .subnav li:hover {
+    color: #000;
+    background-color: #ccc;
+}
+#slider {
+ /* min-height: 500px;
+ background-color: #333; */
+}
+#content {
+
+}
+#footer {
+
+}

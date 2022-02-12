@@ -126,6 +126,56 @@ background: url('../img/slider/slider.jpg') top center /cover no-repeat;
 #content {
 
 }
+#content .content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+
+}
+#content .section-heading {
+    font-size: 30px;
+    font-weight: 500px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+#content .section-subheading {
+    font-size: 15px;
+    text-align: center ;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+
+}
+#content .about-text {
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+#content .member-list {
+    margin-top: 48px;
+    
+}
+#content .member-item {
+    text-align: center;
+    float: left;
+    width: calc(100%/3);
+
+}
+#content .member-name {
+    
+    font-size: 15px;
+}
+#content .member-avatar {
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+
+}
+.clear {
+    clear: both;
+}
 #footer {
 
 }

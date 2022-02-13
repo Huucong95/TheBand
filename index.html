@@ -33,6 +33,9 @@
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
             </div>
+            <div id="menu" class="menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
             <!-- end- search -->
 
         </div>
@@ -209,6 +212,7 @@
         const buyBtns = document.querySelectorAll ('.js-buy-tickets')
         const modal = document.querySelector ('.js-modal')
         const modalClose =document.querySelector('.js-modal-close')
+
         function hideBuy(){
             modal.classList.remove('open')
 
@@ -221,7 +225,33 @@
             buyBtn.addEventListener('click', showBuy)
         } 
         modalClose.addEventListener('click', hideBuy)
+
     </script>
+    <script>   
+        var header = document.getElementById('header')
+        var menu = document.getElementById('menu')
+        var headerHeight = header.clientHeight
+        
+        menu.onclick = function (){
+            var isClose = header.clientHeight === headerHeight;
+            if (isClose) {
+                header.style.height = 'auto';
+            }
+            else { 
+                header.style.height = null;
+                }
+        }
+
+        // tu dong dong menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for (var i=0; i<menuItems.length;i++){
+            var menuItem = menuItems[i];
+           menuItem.onclick = function(){
+            header.style.height = null;
+
+           }
+        }
+</script>
 </body>
 </html>
 <!-- header -->

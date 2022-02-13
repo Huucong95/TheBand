@@ -22,30 +22,33 @@ html {
 3 mau sac
 4 kieu dang
  */
-#main {
 
-}
 #header {
-    height: 46.5px;
+    height: 46px;
     background-color: black;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
+    overflow: hidden;
+    }
 
-}
+
+#header .menu-btn,
 #header .search-btn {
     float: right;
     cursor: pointer;
 
 }
+#header .menu-icon,
 #header .search-icon {
-     color: #fff; 
+    color: #fff; 
     font-size: 20px;
-    line-height: 46.5px;
+    line-height: 46px;
     padding: 0 21px;
 }
+#header .menu-btn:hover,
 #header .search-btn:hover {
    background-color:  #f44336 ;
 }
@@ -76,7 +79,7 @@ html {
 #nav li a {
     
     text-decoration: none;
-    line-height: 46.5px;
+    line-height: 46px;
     padding: 0 24px;
     display: block;
 }
@@ -105,13 +108,13 @@ html {
 }
 #slider {
     position: relative;
-margin-top: 46.5px;
+margin-top: 46px;
 padding-top: 50%;
 background: url('../img/slider/slider.jpg') top center /cover no-repeat;
 }
 #slider .text-content {
     position: absolute;
-    bottom: 47px;
+    bottom: 46px;
     color: #fff;
     width: 100%;
     text-align: center;
@@ -127,14 +130,16 @@ background: url('../img/slider/slider.jpg') top center /cover no-repeat;
     margin-top: 25px;
     
 }
-#content {
 
-}
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 64px 0 112px;
+    padding-left: 16px;
+    padding-right: 16px;
+    
 
 }
 #content .section-heading {
@@ -220,12 +225,12 @@ background: url('../img/slider/slider.jpg') top center /cover no-repeat;
    margin: 32px -8px 48px;
 
 }
-.place-item {
+/* .place-item {
     float: left;
     width: calc(100%/3);
     padding: 0 8px 0;
 
-}
+} */
 .place-img:hover {
     opacity: 0.6;
 }
@@ -266,9 +271,6 @@ background: url('../img/slider/slider.jpg') top center /cover no-repeat;
 }
 .place-by-btn:hover {
     background-color: #757575;
-}
-#footer {
-
 }
 .modal {
     position: fixed;
@@ -449,4 +451,14 @@ background: url('../img/slider/slider.jpg') top center /cover no-repeat;
     transform: translateY(0);
     opacity: 1;
  }
+}
+@media (max-width: 740px) {
+    #nav > li {
+        display: block;
+    }
+
+    #header .search-btn {
+        display: none;
+    }
+
 }

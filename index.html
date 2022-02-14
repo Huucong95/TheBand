@@ -246,7 +246,6 @@
         var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
         for (var i=0; i<menuItems.length;i++){
             var menuItem = menuItems[i];
-                console.log(menuItem.nextElementSibling)
            menuItem.onclick = function(){
                 var subMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav')
                if (!subMenu){
